@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Promise(期约) | 一粒麦子</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/OneWheat/wheat.png">
+    <meta name="description" content="一粒麦子不落在地里死了，仍旧是一粒。若死了，就结出许多子粒来。">
+    
+    <link rel="preload" href="/OneWheat/assets/css/0.styles.1c77ed66.css" as="style"><link rel="preload" href="/OneWheat/assets/js/app.5b92ea6c.js" as="script"><link rel="preload" href="/OneWheat/assets/js/2.8e3b7747.js" as="script"><link rel="preload" href="/OneWheat/assets/js/1.5a416044.js" as="script"><link rel="preload" href="/OneWheat/assets/js/23.8dda6a00.js" as="script"><link rel="prefetch" href="/OneWheat/assets/js/10.db54c986.js"><link rel="prefetch" href="/OneWheat/assets/js/11.be71ba10.js"><link rel="prefetch" href="/OneWheat/assets/js/12.8aa070e7.js"><link rel="prefetch" href="/OneWheat/assets/js/13.352876c3.js"><link rel="prefetch" href="/OneWheat/assets/js/14.aa7e042f.js"><link rel="prefetch" href="/OneWheat/assets/js/15.b7440231.js"><link rel="prefetch" href="/OneWheat/assets/js/16.767a3a88.js"><link rel="prefetch" href="/OneWheat/assets/js/17.e290fa5a.js"><link rel="prefetch" href="/OneWheat/assets/js/18.baeb50d2.js"><link rel="prefetch" href="/OneWheat/assets/js/19.9f389a20.js"><link rel="prefetch" href="/OneWheat/assets/js/20.39d588d5.js"><link rel="prefetch" href="/OneWheat/assets/js/21.d04ba12b.js"><link rel="prefetch" href="/OneWheat/assets/js/22.dac4f624.js"><link rel="prefetch" href="/OneWheat/assets/js/24.143f4846.js"><link rel="prefetch" href="/OneWheat/assets/js/25.df4d487b.js"><link rel="prefetch" href="/OneWheat/assets/js/26.fb57c640.js"><link rel="prefetch" href="/OneWheat/assets/js/27.1a8a3c85.js"><link rel="prefetch" href="/OneWheat/assets/js/28.e9c3cb52.js"><link rel="prefetch" href="/OneWheat/assets/js/29.05e81879.js"><link rel="prefetch" href="/OneWheat/assets/js/3.963f93b8.js"><link rel="prefetch" href="/OneWheat/assets/js/30.437ba86d.js"><link rel="prefetch" href="/OneWheat/assets/js/4.8d42542a.js"><link rel="prefetch" href="/OneWheat/assets/js/5.edbb760b.js"><link rel="prefetch" href="/OneWheat/assets/js/6.7a8bd171.js"><link rel="prefetch" href="/OneWheat/assets/js/7.93fcf6e6.js"><link rel="prefetch" href="/OneWheat/assets/js/vendors~docsearch.5a4296f1.js">
+    <link rel="stylesheet" href="/OneWheat/assets/css/0.styles.1c77ed66.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/OneWheat/" class="home-link router-link-active"><img src="/OneWheat/wheat.png" alt="一粒麦子" class="logo"> <span class="site-name can-hide">一粒麦子</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/OneWheat/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础知识" class="dropdown-title"><span class="title">基础知识</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础知识" class="mobile-dropdown-title"><span class="title">基础知识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/OneWheat/guide/basic/Javascript/" class="nav-link">
+  JavaScript相关
+</a></li><li class="dropdown-item"><!----> <a href="/OneWheat/guide/basic/Typescript/" class="nav-link">
+  TypeScript相关
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架总结" class="dropdown-title"><span class="title">框架总结</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架总结" class="mobile-dropdown-title"><span class="title">框架总结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/OneWheat/guide/Frame/React/" class="nav-link">
+  React相关
+</a></li><li class="dropdown-item"><!----> <a href="/OneWheat/guide/Frame/Vue/" class="nav-link">
+  Vue相关
+</a></li></ul></div></div><div class="nav-item"><a href="/OneWheat/guide/Others/Hello.html" class="nav-link">
+  碎碎念
+</a></div><div class="nav-item"><a href="/OneWheat/guide/Basic/Javascript/.html" class="nav-link">
+  MyBlog
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/OneWheat/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础知识" class="dropdown-title"><span class="title">基础知识</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础知识" class="mobile-dropdown-title"><span class="title">基础知识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/OneWheat/guide/basic/Javascript/" class="nav-link">
+  JavaScript相关
+</a></li><li class="dropdown-item"><!----> <a href="/OneWheat/guide/basic/Typescript/" class="nav-link">
+  TypeScript相关
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架总结" class="dropdown-title"><span class="title">框架总结</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架总结" class="mobile-dropdown-title"><span class="title">框架总结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/OneWheat/guide/Frame/React/" class="nav-link">
+  React相关
+</a></li><li class="dropdown-item"><!----> <a href="/OneWheat/guide/Frame/Vue/" class="nav-link">
+  Vue相关
+</a></li></ul></div></div><div class="nav-item"><a href="/OneWheat/guide/Others/Hello.html" class="nav-link">
+  碎碎念
+</a></div><div class="nav-item"><a href="/OneWheat/guide/Basic/Javascript/.html" class="nav-link">
+  MyBlog
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>JavaScript相关</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/OneWheat/guide/Basic/Javascript/Promise.html" aria-current="page" class="active sidebar-link">Promise(期约)</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/OneWheat/guide/Basic/Javascript/Promise.html#定义" class="sidebar-link">定义</a></li><li class="sidebar-sub-header"><a href="/OneWheat/guide/Basic/Javascript/Promise.html#描述" class="sidebar-link">描述</a></li><li class="sidebar-sub-header"><a href="/OneWheat/guide/Basic/Javascript/Promise.html#promise-的结构" class="sidebar-link">Promise 的结构</a></li><li class="sidebar-sub-header"><a href="/OneWheat/guide/Basic/Javascript/Promise.html#期约链" class="sidebar-link">期约链</a></li><li class="sidebar-sub-header"><a href="/OneWheat/guide/Basic/Javascript/Promise.html#期约的-resolve-解决过程" class="sidebar-link">期约的（resolve）解决过程</a></li><li class="sidebar-sub-header"><a href="/OneWheat/guide/Basic/Javascript/Promise.html#async-和-await" class="sidebar-link">async 和 await</a></li></ul></li><li><a href="/OneWheat/guide/Basic/Javascript/Storage.html" class="sidebar-link">Storage</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="promise-期约"><a href="#promise-期约" class="header-anchor">#</a> Promise(期约)</h1> <h2 id="定义"><a href="#定义" class="header-anchor">#</a> 定义</h2> <p>Promsise 是一个对象，它表示异步操作的最终的完成或者失败以及其结果值，它表示的是一次异步计算结果的未来结果</p> <h2 id="描述"><a href="#描述" class="header-anchor">#</a> 描述</h2> <p>通俗来说，Promise 就像一个容器，里面存放着未来才会结束返回结果的容器，返回结果只用在出口处接收就好。他使得异步方法可以像同步方法一样返回值：即返回一个 promise，在创建 promise 时不一定已知的值</p> <ul><li>promise 必然会处于下述三种状态之一
+<ul><li>待定(pending),初始状态,既没有兑现，也没有被拒绝</li> <li>已兑现(fulfuilled),操作成功完成</li> <li>已拒绝(rejected),操作失败</li></ul></li> <li>promise 的状态只能从待定变成已兑现或者已拒绝，不能逆向转换，同时已兑现和已拒绝之间也不能相互转换</li> <li>promise 对象只会被调用一次，也就是说，promise 对象的状态只会被改变一次</li></ul> <h2 id="promise-的结构"><a href="#promise-的结构" class="header-anchor">#</a> Promise 的结构</h2> <ul><li><p>Promise 的构造函数接收两个参数，分别是 resolve 和 reject</p></li> <li><p>then 方法是 promise 对象的原型方法，它的作用是为 promise 实例添加状态改变时的回调函数，它最多可以接收两个回调函数作为参数，第一个回调函数是 promise 对象状态变为 fulfilled 时调用，第二个回调函数是 promise 对象状态变为 rejected 时调用，其中第二个函数是可选的</p></li> <li><p>通过回调里面的 resolve 和 reject 来改变 promise 的状态，resolve(data)将状态改为 fulfilled，reject(err)将状态改为 rejected</p></li> <li><p>catch 方法，该方法相当于最近的 then 方法的第二个参数，指向 reject 的回调函数，另一个作用是，在执行 resolve 回调函数时，如果出错，抛出异常，不会停止运行，而是进入 catch 方法中。</p></li></ul> <h2 id="期约链"><a href="#期约链" class="header-anchor">#</a> 期约链</h2> <ul><li>期约链是指将多个期约连接起来，前一个期约的输出作为后一个期约的输入，他们之间使用 then 方法连接</li> <li>期约链中的每个期约都是通过前一个期约的输出来决定自己的状态</li> <li>例：fetch(URL).then(callBack1).then(callBack2).catch(rejectError)</li> <li>对于一个异步的期约链，它的错误我们可以比喻成“沿着期约链向下流淌”，直到碰上.catch()的调用， 即使.then() 缺少返回 Promise 对象的回调函数，处理程序仍会继续到链的下一个链式调用。因此，在最终的 .catch() 之前，可以安全地省略每个链式调用中处理已拒绝状态的回调函数</li> <li>promise 对象还定义了一个.finally 方法，该方法接收一个回调函数作为参数，不管 promise 对象最后的状态如何，都会执行该回调函数，finally 方法的回调函数不接受任何参数，也就是说，没有办法知道前面的 promise 对象的状态到底是 fulfilled 还是 rejected，这表明，finally 方法里面的操作，应该是与状态无关的，不依赖于 promise 的执行结果</li></ul> <h2 id="期约的-resolve-解决过程"><a href="#期约的-resolve-解决过程" class="header-anchor">#</a> 期约的（resolve）解决过程</h2> <ul><li><p>如果 promise 的状态是 fulfilled，那么它的值就是 resolve 的参数</p></li> <li><p>如果 promise 的状态是 rejected，那么它的值就是 reject 的参数</p></li> <li><p>如果 promise 的状态是 pending，那么它就是异步操作，需要等到异步操作完成，才会得到最终的结果，所以在 then 方法指定的回调函数中，必须判断当前的状态，如果是 pending，就等待状态的改变反之，就立即执行回调函数
+例： let myPromise = new Promise((resolve, reject) =&gt; {
+// 模拟异步操作
+setTimeout(() =&gt; {
+// 假设异步操作成功了，我们调用 resolve 来将 Promise 从 pending 变为 fulfilled
+resolve('成功的结果');
+}, 2000);
+});</p> <p>myPromise.then((result) =&gt; {
+console.log(result); // 这里会打印 '成功的结果'
+});</p></li></ul> <p>resolve 函数被传递给了 Promise 的构造函数。当异步操作成功后，resolve 函数会被调用，这将使得 Promise 对象的状态变为“已决”，并且可以通过 .then() 方法获取到成功的结果。</p> <h2 id="async-和-await"><a href="#async-和-await" class="header-anchor">#</a> async 和 await</h2> <ul><li><p>async
+async 函数是返回一个 Promise 对象的函数。当调用一个 async 函数时，它会返回一个 Promise，该 Promise 将会在函数的所有代码执行完毕后被 resolved。</p> <p>async 函数可以包含 await 表达式，它会暂停函数的执行并等待 Promise 解决。在等待期间，JavaScript 引擎可以执行其他任务，这使得程序可以保持响应性。</p></li> <li><p>await
+await 只能在 async 函数中使用。它等待一个 Promise 的解决（或拒绝），然后继续执行函数。如果 await 后面的表达式是一个 Promise，它将等待 Promise 完成，然后返回解决的值。</p></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/OneWheat/guide/Basic/Javascript/Storage.html">
+        Storage
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/OneWheat/assets/js/app.5b92ea6c.js" defer></script><script src="/OneWheat/assets/js/2.8e3b7747.js" defer></script><script src="/OneWheat/assets/js/1.5a416044.js" defer></script><script src="/OneWheat/assets/js/23.8dda6a00.js" defer></script>
+  </body>
+</html>

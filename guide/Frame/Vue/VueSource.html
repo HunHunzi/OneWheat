@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue3 源码解读 | 一粒麦子</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/OneWheat/wheat.png">
+    <meta name="description" content="一粒麦子不落在地里死了，仍旧是一粒。若死了，就结出许多子粒来。">
+    
+    <link rel="preload" href="/OneWheat/assets/css/0.styles.1c77ed66.css" as="style"><link rel="preload" href="/OneWheat/assets/js/app.5b92ea6c.js" as="script"><link rel="preload" href="/OneWheat/assets/js/2.8e3b7747.js" as="script"><link rel="preload" href="/OneWheat/assets/js/1.5a416044.js" as="script"><link rel="preload" href="/OneWheat/assets/js/29.05e81879.js" as="script"><link rel="prefetch" href="/OneWheat/assets/js/10.db54c986.js"><link rel="prefetch" href="/OneWheat/assets/js/11.be71ba10.js"><link rel="prefetch" href="/OneWheat/assets/js/12.8aa070e7.js"><link rel="prefetch" href="/OneWheat/assets/js/13.352876c3.js"><link rel="prefetch" href="/OneWheat/assets/js/14.aa7e042f.js"><link rel="prefetch" href="/OneWheat/assets/js/15.b7440231.js"><link rel="prefetch" href="/OneWheat/assets/js/16.767a3a88.js"><link rel="prefetch" href="/OneWheat/assets/js/17.e290fa5a.js"><link rel="prefetch" href="/OneWheat/assets/js/18.baeb50d2.js"><link rel="prefetch" href="/OneWheat/assets/js/19.9f389a20.js"><link rel="prefetch" href="/OneWheat/assets/js/20.39d588d5.js"><link rel="prefetch" href="/OneWheat/assets/js/21.d04ba12b.js"><link rel="prefetch" href="/OneWheat/assets/js/22.dac4f624.js"><link rel="prefetch" href="/OneWheat/assets/js/23.8dda6a00.js"><link rel="prefetch" href="/OneWheat/assets/js/24.143f4846.js"><link rel="prefetch" href="/OneWheat/assets/js/25.df4d487b.js"><link rel="prefetch" href="/OneWheat/assets/js/26.fb57c640.js"><link rel="prefetch" href="/OneWheat/assets/js/27.1a8a3c85.js"><link rel="prefetch" href="/OneWheat/assets/js/28.e9c3cb52.js"><link rel="prefetch" href="/OneWheat/assets/js/3.963f93b8.js"><link rel="prefetch" href="/OneWheat/assets/js/30.437ba86d.js"><link rel="prefetch" href="/OneWheat/assets/js/4.8d42542a.js"><link rel="prefetch" href="/OneWheat/assets/js/5.edbb760b.js"><link rel="prefetch" href="/OneWheat/assets/js/6.7a8bd171.js"><link rel="prefetch" href="/OneWheat/assets/js/7.93fcf6e6.js"><link rel="prefetch" href="/OneWheat/assets/js/vendors~docsearch.5a4296f1.js">
+    <link rel="stylesheet" href="/OneWheat/assets/css/0.styles.1c77ed66.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/OneWheat/" class="home-link router-link-active"><img src="/OneWheat/wheat.png" alt="一粒麦子" class="logo"> <span class="site-name can-hide">一粒麦子</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/OneWheat/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础知识" class="dropdown-title"><span class="title">基础知识</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础知识" class="mobile-dropdown-title"><span class="title">基础知识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/OneWheat/guide/basic/Javascript/" class="nav-link">
+  JavaScript相关
+</a></li><li class="dropdown-item"><!----> <a href="/OneWheat/guide/basic/Typescript/" class="nav-link">
+  TypeScript相关
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架总结" class="dropdown-title"><span class="title">框架总结</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架总结" class="mobile-dropdown-title"><span class="title">框架总结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/OneWheat/guide/Frame/React/" class="nav-link">
+  React相关
+</a></li><li class="dropdown-item"><!----> <a href="/OneWheat/guide/Frame/Vue/" class="nav-link router-link-active">
+  Vue相关
+</a></li></ul></div></div><div class="nav-item"><a href="/OneWheat/guide/Others/Hello.html" class="nav-link">
+  碎碎念
+</a></div><div class="nav-item"><a href="/OneWheat/guide/Frame/Vue/.html" class="nav-link">
+  MyBlog
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/OneWheat/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础知识" class="dropdown-title"><span class="title">基础知识</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础知识" class="mobile-dropdown-title"><span class="title">基础知识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/OneWheat/guide/basic/Javascript/" class="nav-link">
+  JavaScript相关
+</a></li><li class="dropdown-item"><!----> <a href="/OneWheat/guide/basic/Typescript/" class="nav-link">
+  TypeScript相关
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架总结" class="dropdown-title"><span class="title">框架总结</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架总结" class="mobile-dropdown-title"><span class="title">框架总结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/OneWheat/guide/Frame/React/" class="nav-link">
+  React相关
+</a></li><li class="dropdown-item"><!----> <a href="/OneWheat/guide/Frame/Vue/" class="nav-link router-link-active">
+  Vue相关
+</a></li></ul></div></div><div class="nav-item"><a href="/OneWheat/guide/Others/Hello.html" class="nav-link">
+  碎碎念
+</a></div><div class="nav-item"><a href="/OneWheat/guide/Frame/Vue/.html" class="nav-link">
+  MyBlog
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Vue相关</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/OneWheat/guide/Frame/Vue/VueSource.html" aria-current="page" class="active sidebar-link">Vue3 源码解读</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/OneWheat/guide/Frame/Vue/VueSource.html#vue3-的设计理念" class="sidebar-link">Vue3 的设计理念</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/OneWheat/guide/Frame/Vue/VueSource.html#初识虚拟-dom" class="sidebar-link">初识虚拟 DOM</a></li><li class="sidebar-sub-header"><a href="/OneWheat/guide/Frame/Vue/VueSource.html#组件的本质" class="sidebar-link">组件的本质</a></li><li class="sidebar-sub-header"><a href="/OneWheat/guide/Frame/Vue/VueSource.html#模板的工作原理" class="sidebar-link">模板的工作原理</a></li></ul></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue3-源码解读"><a href="#vue3-源码解读" class="header-anchor">#</a> Vue3 源码解读</h1> <h2 id="vue3-的设计理念"><a href="#vue3-的设计理念" class="header-anchor">#</a> Vue3 的设计理念</h2> <h3 id="初识虚拟-dom"><a href="#初识虚拟-dom" class="header-anchor">#</a> 初识虚拟 DOM</h3> <ul><li>虚拟 DOM 的性能：声明式的更新性能消耗 = 找出差异的性能的消耗 + 应用差异的性能消耗</li> <li>而真实 DOM 需要重新渲染所有的 DOM 节点</li> <li>其实虚拟 DOM 就是一个 JS 对象，里面包含着 DOM 的结构和属性，通过这个对象来描述真实的 DOM 结构，通过渲染器将虚拟 DOM 渲染成真实的 DOM</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">//一个简单的虚拟 DOM</span>
+<span class="token keyword">const</span> vnode <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">tag</span><span class="token operator">:</span> <span class="token string">&quot;div&quot;</span><span class="token punctuation">,</span> <span class="token comment">//标签</span>
+  <span class="token literal-property property">props</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">//属性</span>
+    <span class="token literal-property property">className</span><span class="token operator">:</span> <span class="token string">&quot;container&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token string">&quot;app&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">children</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token comment">//子节点</span>
+    <span class="token punctuation">{</span>
+      <span class="token literal-property property">tag</span><span class="token operator">:</span> <span class="token string">&quot;h1&quot;</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">props</span><span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">children</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;hello&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token literal-property property">tag</span><span class="token operator">:</span> <span class="token string">&quot;p&quot;</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">props</span><span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">children</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;world&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// 写一个简单的渲染器</span>
+<span class="token keyword">function</span> <span class="token function">renderer</span><span class="token punctuation">(</span><span class="token parameter">vnode<span class="token punctuation">,</span> container</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">//使用 vnode.tag 作为标签创建元素</span>
+  <span class="token keyword">const</span> el <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span>vnode<span class="token punctuation">.</span>tag<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">//遍历 vnode.data 设置属性,事件</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">const</span> key <span class="token keyword">in</span> vnode<span class="token punctuation">.</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//如果 key 是 on 开头的,说明是事件</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^on</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      el<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span>key<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> vnode<span class="token punctuation">.</span>props<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//绑定事件</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">//如果 children 是 字符串，说明是文本</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> vnode<span class="token punctuation">.</span>props<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">===</span> <span class="token string">&quot;string&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      el<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">createTextNode</span><span class="token punctuation">(</span>vnode<span class="token punctuation">.</span>props<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//设置文本</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>Array<span class="token punctuation">.</span><span class="token function">isArray</span><span class="token punctuation">(</span>vnode<span class="token punctuation">.</span>children<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 递归调用 render 函数渲染子节点，使用当前 el 元素作为挂载点</span>
+      vnode<span class="token punctuation">.</span>children<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">vnode</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token function">renderer</span><span class="token punctuation">(</span>vnode<span class="token punctuation">,</span> el<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    container<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>el<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//将 el 挂载到 container 上</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//然后我们调用渲染器</span>
+<span class="token function">renderer</span><span class="token punctuation">(</span>vnode<span class="token punctuation">,</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;app&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 渲染器的精髓在于它会精确地找到修改后的节点，而无需重新渲染整个 DOM 树</span>
+</code></pre></div><h3 id="组件的本质"><a href="#组件的本质" class="header-anchor">#</a> 组件的本质</h3> <ul><li>组件就是一组 DOM 元素的封装</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">//一个简单的组件</span>
+<span class="token keyword">const</span> <span class="token function-variable function">MyComponent</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">tag</span><span class="token operator">:</span> <span class="token string">&quot;div&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">props</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token function-variable function">onClick</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&quot;click&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">children</span><span class="token operator">:</span> <span class="token string">&quot;click me&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token comment">//组件的返回值也是虚拟 DOM</span>
+<span class="token keyword">const</span> vnode <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">tag</span><span class="token operator">:</span> MyComponent<span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>对于组件的渲染器，我们只需要简单地修改一下，<code>typeof vnode.tag === 'function'</code> 时，我们就调用一下组件函数，然后再将返回的 vnode 传入渲染器即可,但是需要对组件的挂载函数做一点小小的修改</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">//组件挂载</span>
+<span class="token keyword">function</span> <span class="token function">mountComponent</span><span class="token punctuation">(</span><span class="token parameter">vnode<span class="token punctuation">,</span> container</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 调用组件函数，得到组件对应的虚拟 DOM 对象</span>
+  <span class="token keyword">const</span> subTree <span class="token operator">=</span> vnode<span class="token punctuation">.</span><span class="token function">tag</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">// 递归调用 render 函数进行渲染</span>
+  <span class="token function">renderer</span><span class="token punctuation">(</span>subTree<span class="token punctuation">,</span> container<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>当然我们可以举一反三，使用一个数组来代表组件，只要我们简单修改一下渲染器的判断条件即可</p> <h3 id="模板的工作原理"><a href="#模板的工作原理" class="header-anchor">#</a> 模板的工作原理</h3> <ul><li>由于 vue 使用的是声明式语言，所以需要使用编译器，将模板编译成虚拟 DOM，然后再渲染到页面上，<code>&lt;template&gt;&lt;/template&gt;</code>标签就是编译器的入口，编译器会将模板编译成 render 函数，然后再调用 render 函数生成虚拟 DOM，最后再渲染到页面上。</li> <li>对于渲编译器来说，想要提高它的效率，那需要用到一些小技巧，比如说缓存，缓存就是将编译好的 render 函数缓存起来，下次再编译的时候，如果模板没有发生变化，那么就直接使用缓存的 render 函数，而不需要重新编译，这样就可以提高编译器的效率。或者是对于一些静态节点，我们可以直接将它编译成字符串，然后再渲染的时候，直接将字符串插入到 DOM 中，这样就可以减少一次渲染的过程，提高渲染的效率。</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/OneWheat/assets/js/app.5b92ea6c.js" defer></script><script src="/OneWheat/assets/js/2.8e3b7747.js" defer></script><script src="/OneWheat/assets/js/1.5a416044.js" defer></script><script src="/OneWheat/assets/js/29.05e81879.js" defer></script>
+  </body>
+</html>
